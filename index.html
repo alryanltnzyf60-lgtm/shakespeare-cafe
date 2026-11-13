@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1e3028">
+<meta name="description" content="Discover Shakespeare and Company Café in Paris — specialty coffee and a literary atmosphere in the heart of the Latin Quarter.">
+<title>Shakespeare and Company Café | Paris</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--green:#1e3028;--green2:#30483b;--cream:#f5f0e6;--paper:#fffdf8;--gold:#c7a66a;--ink:#252820;--muted:#77776d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.75}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}
+header{background:rgba(30,48,40,.97);color:#fff;position:sticky;top:0;z-index:10;box-shadow:0 5px 24px #0002}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;font-family:"Playfair Display",serif;font-size:20px;line-height:1.15}.brand small{font:10px Inter,sans-serif;color:#d7c39a;letter-spacing:2px}.brand-mark{width:42px;height:42px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:23px}.navlinks{display:flex;gap:26px;font-size:13px;color:#eee}.navlinks a:hover{color:var(--gold)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 20px;border-radius:4px;background:var(--gold);color:#1e2b23;font-weight:800;font-size:13px;transition:.2s}.nav-cta:hover,.btn:hover{transform:translateY(-2px);filter:brightness(1.06)}
+.hero{min-height:640px;display:flex;align-items:center;position:relative;color:#fff;background:linear-gradient(90deg,rgba(15,29,23,.82),rgba(15,29,23,.40)),url('https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=2000&q=85') center/cover}
+.hero-content{max-width:670px;padding:90px 0}.eyebrow{color:var(--gold);letter-spacing:2px;font-size:11px;font-weight:800}.hero h1{font-family:"Playfair Display",serif;font-size:clamp(42px,7vw,76px);line-height:1.13;margin:18px 0}.hero p{font-size:17px;color:#f0eee7;max-width:590px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn-outline{border:1px solid #ffffff9c;color:white;padding:10px 20px;border-radius:4px;font-weight:700;font-size:13px}.rating{display:flex;gap:10px;align-items:center;margin-top:28px;color:#f8e6bd;font-size:14px}.stars{color:#e5bd70;letter-spacing:3px}
+.section{padding:86px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 42px}.section-head .eyebrow{color:#987744}.section-head h2{font:700 clamp(32px,4vw,46px)/1.3 "Playfair Display",serif;color:var(--green);margin:8px 0}.section-head p{color:var(--muted);margin:0}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}.photo-stack{position:relative;padding:0 0 28px 28px}.photo-stack img{width:100%;height:430px;object-fit:cover;border-radius:3px;display:block}.photo-stack:after{content:"";position:absolute;inset:28px 28px 0 0;border:1px solid var(--gold);z-index:-1}.intro-copy h2{font:700 42px/1.3 "Playfair Display",serif;color:var(--green);margin:8px 0 16px}.intro-copy p{color:#64655d}.fact-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.fact{background:#ebe4d6;padding:12px 17px;border-left:3px solid var(--gold);font-size:13px}.fact strong{display:block;color:var(--green);font-size:18px}
+.menu{background:#eae3d5}.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.menu-card{background:var(--paper);padding:0 0 22px;box-shadow:0 10px 30px #342a1710}.menu-card img{width:100%;height:220px;object-fit:cover;display:block}.menu-card h3{font:700 25px "Playfair Display",serif;color:var(--green);margin:16px 20px 4px}.menu-card p{font-size:13px;color:var(--muted);margin:0 20px}
+.gallery-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-template-rows:210px 210px;gap:14px}.gallery-grid img{width:100%;height:100%;object-fit:cover;border-radius:3px}.gallery-grid img:first-child{grid-row:span 2}
+.review{background:var(--green);color:white;text-align:center;padding:72px 20px}.review .stars{font-size:24px}.review h2{font:700 40px "Playfair Display",serif;margin:10px 0}.review p{color:#e4e5dc;max-width:650px;margin:0 auto}.review-score{font-size:44px;color:var(--gold);font-weight:800}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:stretch}.visit-card{background:var(--paper);padding:32px;border:1px solid #e6dece}.visit-card h3{font:700 29px "Playfair Display",serif;color:var(--green);margin:0 0 18px}.info{display:flex;gap:13px;padding:12px 0;border-bottom:1px solid #eee8dc;font-size:14px}.info b{min-width:120px;color:var(--green)}.mapbox{background:#d9dfd6;min-height:350px;display:grid;place-items:center;text-align:center;padding:25px;background-image:linear-gradient(#1e3028aa,#1e3028aa),url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1000&q=80');background-size:cover;background-position:center;color:white}.mapbox h3{font:700 34px "Playfair Display",serif;margin:0 0 8px}
+footer{background:#17271f;color:#d8d8cf;padding:30px 0;text-align:center;font-size:12px}footer .brand{justify-content:center;margin-bottom:12px}
+@media(max-width:800px){.navlinks{display:none}.nav{height:66px}.hero{min-height:590px}.hero-content{padding:75px 0}.intro-grid,.visit-grid{grid-template-columns:1fr}.photo-stack img{height:330px}.menu-grid{grid-template-columns:1fr 1fr}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:180px 180px 180px}.gallery-grid img:first-child{grid-row:auto;grid-column:span 2}}
+@media(max-width:520px){.brand{font-size:17px}.nav-cta{padding:9px 12px;font-size:11px}.hero p{font-size:15px}.section{padding:62px 0}.menu-grid{grid-template-columns:1fr}.menu-card img{height:230px}.gallery-grid{gap:8px;grid-template-rows:140px 140px 140px}.intro-copy h2{font-size:34px}.info{font-size:13px}.info b{min-width:100px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#top"><span class="brand-mark">S</span><span>Shakespeare<br><small>AND COMPANY CAFÉ</small></span></a>
+<nav class="navlinks"><a href="#about">About</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#visit">Location & Contact</a></nav>
+<a class="nav-cta" href="https://www.google.com/maps/search/?api=1&query=Shakespeare+and+Company+Caf%C3%A9+37+Rue+de+la+B%C3%BBcherie+Paris" target="_blank" rel="noopener">Get Directions</a>
+</div></header>
+<main id="top">
+<section class="hero"><div class="wrap"><div class="hero-content">
+<div class="eyebrow">A LITTLE PARISIAN MOMENT · PARIS, FRANCE</div>
+<h1>Coffee, Stories &<br>Parisian Charm</h1>
+<p>Enjoy a cup of coffee in a warm, welcoming setting beside the iconic Shakespeare and Company bookshop, in the heart of the Latin Quarter and just steps from the Seine.</p>
+<div class="hero-actions"><a class="btn" href="#visit">Plan Your Visit</a><a class="btn-outline" href="#menu">Explore the Menu</a></div>
+<div class="rating"><span class="stars">★★★★★</span><strong>4.2 / 5</strong><span>From 1,142 Google reviews</span></div>
+</div></div></section>
+<section class="section" id="about"><div class="wrap intro-grid">
+<div class="photo-stack"><img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1100&q=85" alt="Warm and welcoming café atmosphere"></div>
+<div class="intro-copy"><div class="eyebrow">THE CAFÉ EXPERIENCE</div><h2>A Quiet Coffee Break in the Heart of Paris</h2>
+<p>Located at 37 Rue de la Bûcherie, Shakespeare and Company Café offers a memorable stop for coffee lovers and visitors exploring the Latin Quarter. Enjoy a drink before wandering through the neighborhood's charming streets and nearby Paris landmarks.</p>
+<p>Take a seat, slow down, and enjoy a relaxed café experience surrounded by the literary spirit of this special corner of Paris.</p>
+<div class="fact-row"><div class="fact"><strong>4.2 ⭐</strong>Guest Rating</div><div class="fact"><strong>€1–€10</strong>Average Price per Person</div><div class="fact"><strong>Dine-in</strong>Seating Available</div></div>
+</div></div></section>
+<section class="section menu" id="menu"><div class="wrap"><div class="section-head"><div class="eyebrow">COFFEE & TREATS</div><h2>Drinks Worth Discovering</h2><p>A few popular choices listed among the café's menu highlights.</p></div>
+<div class="menu-grid">
+<article class="menu-card"><img src="https://images.unsplash.com/photo-1460978812857-470ed1c77af0?auto=format&fit=crop&w=800&q=85" alt="Flat white coffee"><h3>Flat White</h3><p>Smooth espresso with silky steamed milk.</p></article>
+<article class="menu-card"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=85" alt="Cappuccino"><h3>Cappuccino</h3><p>A classic balance of espresso and milk foam.</p></article>
+<article class="menu-card"><img src="https://images.unsplash.com/photo-1517578239113-b03992dcdd25?auto=format&fit=crop&w=800&q=85" alt="Hot chocolate"><h3>Hot Chocolate</h3><p>A comforting treat for a relaxed Parisian moment.</p></article>
+</div></div></section>
+<section class="section" id="gallery"><div class="wrap"><div class="section-head"><div class="eyebrow">A GLIMPSE OF PARIS</div><h2>Coffee, Books & City Moments</h2><p>A little inspiration for your next stop in the Latin Quarter.</p></div>
+<div class="gallery-grid">
+<img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1000&q=85" alt="Classic café interior">
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=85" alt="Coffee preparation">
+<img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=85" alt="Paris city streets">
+<img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=85" alt="Café seating">
+<img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=85" alt="Freshly brewed coffee"></div></div></section>
+<section class="review"><div class="stars">★★★★★</div><div class="review-score">4.2 / 5</div><h2>Rated by Our Visitors</h2><p>More than 1,142 Google reviews. Read visitors' feedback and browse the latest photos before your visit.</p><div style="margin-top:24px"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Shakespeare+and+Company+Caf%C3%A9+Paris" target="_blank" rel="noopener">Read Google Reviews</a></div></section>
+<section class="section" id="visit"><div class="wrap"><div class="section-head"><div class="eyebrow">FIND US IN PARIS</div><h2>Visit Us in the Latin Quarter</h2><p>Plan your visit and contact the café directly.</p></div>
+<div class="visit-grid"><div class="visit-card"><h3>Visit Information</h3>
+<div class="info"><b>Address</b><span>37 Rue de la Bûcherie, 75005 Paris, France</span></div>
+<div class="info"><b>Phone</b><span dir="ltr">+33 1 43 25 95 95</span></div>
+<div class="info"><b>Rating</b><span>4.2 ⭐ (1,142 reviews)</span></div>
+<div class="info"><b>Price Range</b><span>€1–€10 per person</span></div>
+<div class="info"><b>Services</b><span>Dine-in · Takeaway · No delivery listed in the supplied information</span></div>
+<div class="info"><b>Opening Hours</b><span>Provided information: Opens Saturday at 9:00 AM. Please check Google for the latest hours on other days.</span></div>
+<div class="hero-actions"><a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=Shakespeare+and+Company+Caf%C3%A9%2C+37+Rue+de+la+B%C3%BBcherie%2C+Paris" target="_blank" rel="noopener">Get Directions</a><a class="btn-outline" style="color:var(--green);border-color:var(--green)" href="tel:+33143259595">Call the Café</a></div>
+</div><div class="mapbox"><div><div style="font-size:40px">⌖</div><h3>Shakespeare and Company Café</h3><p>37 Rue de la Bûcherie · Paris, France</p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=37+Rue+de+la+B%C3%BBcherie+75005+Paris" target="_blank" rel="noopener">Open in Google Maps</a></div></div></div></div></section>
+</main>
+<footer><div class="wrap"><div class="brand"><span class="brand-mark">S</span><span>Shakespeare and Company Café</span></div><div>Paris, France · An informational café landing page</div><div style="margin-top:8px;color:#aeb8ae">© 2026 — All rights reserved</div></div></footer>
+</body></html>
